@@ -3,7 +3,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Sign In</title>
+    <title>All books</title>
     <link href="https://fonts.googleapis.com/css?family=Oswald:400,700|Roboto&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="{{url_for('static', filename='fonts/icomoon/style.css')}}">
     <link rel="stylesheet" href="{{url_for('static', filename='css/bootstrap.min.css')}}">
@@ -22,6 +22,50 @@
     <link rel="stylesheet" href="{{url_for('static', filename='css/style.css')}}">
 </head>
 <body>
+    <body data-spy="scroll" data-target=".site-navbar-target" data-offset="300">
+
+
+        <li><a href="/addbookpage" style="background-color:red; float:right">ADD A BOOK</a></li>
+      
+      <div class="site-wrap">
+    
+        <div class="site-mobile-menu site-navbar-target">
+          <div class="site-mobile-menu-header">
+            <div class="site-mobile-menu-close mt-3">
+              <span class="icon-close2 js-menu-toggle"></span>
+            </div>
+          </div>
+          <div class="site-mobile-menu-body"></div>
+        </div> <!-- .site-mobile-menu -->
+        
+        
+        <div class="site-navbar-wrap">
+          
+          <div class="site-navbar site-navbar-target js-sticky-header">
+            <div class="container">
+              <div class="row align-items-center">
+                <div class="col-6 col-lg-3">
+                  <h1 class="my-0 site-logo"><a href="index.html">UgoLibs</a></h1>
+                </div>
+                <div class="col-6 col-lg-9">
+                  <nav class="site-navigation text-right" role="navigation">
+                    <div class="container">
+    
+                      <div class="d-inline-block d-lg-none ml-md-0 mr-auto py-3 "><a href="#" class="site-menu-toggle js-menu-toggle text-black">
+                        <span class="icon-menu h3"></span>
+                      </a></div>
+    
+                      <ul class="site-menu main-menu js-clone-nav d-none d-lg-block">
+                        <li><a href="#home-section" class="nav-link">Home</a></li>
+                        <li><a href="/allbooks" class="nav-link">All Books</a></li>
+                 
+                    </div>
+                  </nav>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div> <!-- END .site-navbar-wrap -->
 
 
     <form action="/allbooks" method="post">
