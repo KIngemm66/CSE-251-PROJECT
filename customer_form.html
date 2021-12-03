@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Customer</title>
+    <link href="https://fonts.googleapis.com/css?family=Oswald:400,700|Roboto&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="{{url_for('static', filename='fonts/icomoon/style.css')}}">
+    <link rel="stylesheet" href="{{url_for('static', filename='css/bootstrap.min.css')}}">
+    <link rel="stylesheet" href="{{url_for('static', filename='css/animate.css')}}">
+    <link rel="stylesheet" href="{{url_for('static', filename='css/owl.carousel.min.css')}}">
+    <link rel="stylesheet" href="{{url_for('static', filename='css/owl.theme.default.min.css')}}">
+    <link rel="stylesheet" href="{{url_for('static', filename='css/bootstrap-datepicker.css')}}">
+    
+    
+    <link rel="stylesheet" href="{{url_for('static', filename='fonts/flaticon/font/flaticon.css')}}">
+  
+    <link rel="stylesheet" href="{{url_for('static', filename='css/aos.css')}}">
+    <link rel="stylesheet" href="{{url_for('static', filename='css/jquery.fancybox.min.css')}}">
+    
+
+    <link rel="stylesheet" href="{{url_for('static', filename='css/style.css')}}">
+</head>
+<body>
+    
+<form action="/add-author" method="post">
+    <input type="email" name="email" placeholder="Customer's Email">
+    <br>
+    <input type="text" name="name" placeholder="Customer's Name">
+    <br>
+    <input type="tel" name="phone" placeholder="Customer's number">
+    <br>
+    <input type="address" name="address" placeholder="Customer's address">
+    <br>
+    <input type="submit" value="submit">
+</form>
+
+</body>
+</html>
